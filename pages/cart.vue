@@ -31,7 +31,7 @@
             Shopping Cart
         </h1>
     </div>
-    <table class="table-auto w-2/3 mt-20 mx-auto">
+    <table class="table-auto w-2/3 mt-20 mx-auto mb-20">
       <thead>
           <tr><!--table rows-->
               <th class="text-left">Name</th><!--table header-->
@@ -55,6 +55,16 @@
               <td class="py-10" colspan="3">Total</td><!--colspan 3 = move the grand total figures to 3rd column under column header "total"-->
               <td class="text-right">RM {{ total.toFixed(2) }}</td>
             </tr>
+          <tr>
+            <td colspan="3">
+              <input id="email" type="email" placeholder="Please email your email" class="w-full border border-gray-300 text-xl mt-5 py-3 px-2" /><!--text xl - enlarge xl size, w-full means to draw an email box in full entire of 3 columns-->
+            </td>
+            <td colspan="2" class="text-right">
+              <button class="font-oswald uppercase bg-red-500 text-white text-xl py-3 px-2 ml-5 mt-5" @click="submitorder">
+                Confirm My Order
+              </button>
+            </td>
+          </tr>
           </tfoot>
         </table>
     </div>
@@ -73,6 +83,9 @@ export default {
   methods: {
     removeItem(name) {
       this.$store.commit('removeItem', name);
+    },
+    submitOrder() {
+      this.$axios.post('/.netlify/functions/email', { email: document.getElementById('email').value, orders: this.$store.state.orders, });
     },
   },
 };
