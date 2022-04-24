@@ -58,7 +58,8 @@
           </h2>
           <p class="text-white font-roboto font-light text-center">
             Our signature burger now comes with onion and cheese. You can customise it to your likings. Freshly made to order, all in a
-            Brioche style bun.</p>
+            Brioche style bun.
+          </p>
         </div>
       </div>
     </div>
@@ -73,11 +74,10 @@
       <button class="font-oswald uppercase bg-red-500 text-white text-center py-3 px-8">Explore Full Menu</button><!--bg red repsents of background red color-->
       </div>
       </div>
-      <div id='section-2'>
-        <div class='grid grid-cols-3 text-center pl-20 pr-20 pt-10 pb-10 bg-yellow-500 gap-10'>
-        <div>
-          <!--refer to www.heroicons.com for star icon - copy the svg and paste into row 80 - 87-->
-          <svg xmlns="http://www.w3.org/2000/svg"
+      <div id="section-2">
+        <div class="grid grid-cols-3 text-center pl-20 pr-20 pt-10 pb-10 bg-yellow-500 gap-10">
+        <div><!--refer to www.heroicons.com for star icon - copy the svg and paste into row 80 - 87-->
+        <svg xmlns="http://www.w3.org/2000/svg"
           class="h-20 w-20 stroke-1 mx-auto"
           fill="none"
           viewBox="0 0 24 24"
@@ -116,42 +116,46 @@
       <div id="section-3">
       <h2 class="text-6xl font-oswald text-red-500 upper font-medium text-center pt-20"> Our Crazy Burgers</h2>
       <p class="text-gray-500 font-light text-xl my-10 px-20 text-center">
-      Whether you are looking for the classics, our specialties, or just wraps, salads, and fries. We have it all. We always have something that rewards you tastebud.</p>
+      Whether you are looking for the classics, our specialties, or just wraps, salads, and fries. We have it all. We always have something that rewards you tastebud.
+      </p>
       <div class="grid grid-cols-2 px-40 gap-2"> <!--cols 2 = 2 columns gap means the gap width in both pictures-->
           <div id="left-item-column"><!--left item column is merely the variable name - self creation-->
           <div class="border rounded-md border-gray-200 text-left pb-5 mb-5"><!--rounded md - middle-->
-          <img src="crispy-chicken.jpg" alt=""/>
+          <img src="crispy-chicken.jpg" alt="" />
           <h3 class="font-oswald font-medium text-2xl uppercase text-gray-500 mt-5 mb-2 ml-5">Christy Chicken</h3>
           <p class="font-light text-gray-500 mb-5 ml-5">Chicken breast, chilli source, tomatoes, pickles, coleslaw</p>
          <span class="bg-amber-800 text-yellow-400 font bold text-xl font-oswald ml-5 rounded rounded-lg px-5 py-2">RM11.99<!--xl make the text size slight bigger-->
           </span>
           </div>
-        <Item image="baa-baa.jpg" title="Baa-Baa Black Sheep" description="American Cheese, tomato relish, avocado, juicy lamb patty" price="15.75"/><!--<Item /> is the variable name extracted from Components -> Item.vue from left top page-->
+        <Item image="baa-baa.jpg" title="Baa-Baa Black Sheep" description="American Cheese, tomato relish, avocado, juicy lamb patty" price="15.75" /><!--<Item /> is the variable name extracted from Components -> Item.vue from left top page-->
         </div>
             <div id="right-item-column"><!--right item column is merely the variable name - self creation-->
               <div class="border rounded-md border-gray-200 text-left pb-5 mb-5"><!--rounded md - middle-->
-               <img src="/ultimate-bacon.jpg" alt=""/>
+               <img src="/ultimate-bacon.jpg" alt="" />
                 <h3 class="font-oswald font-medium text-2xl uppercase text-gray-500 mt-5 mb-2 ml-5">Ultimate Bacon</h3>
                 <p class="font-light text-gray-500 mb-5 ml-5">House beef patty, cheddar cheese, smokey bacon, onion, mustard</p>
                 <span class="bg-amber-800 text-yellow-400 font bold text-xl font-oswald ml-5 rounded rounded-lg px-5 py-2">RM14.99<!--xl make the text size slight bigger-->
                 </span><!--SPAN was used within the price object button-->
                  </div>
-                 <Item image="double-burger.jpg" title="Double Burger" description="2 beef patties, cheddar cheese, mustard, pickles, tomatoes" price="15.35"/><!--<Item />  is the variable name extracted from Components -> Item.vue from left top page-->
+                 <Item image="double-burger.jpg" title="Double Burger" description="2 beef patties, cheddar cheese, mustard, pickles, tomatoes" price="15.35" /><!--<Item />  is the variable name extracted from Components -> Item.vue from left top page-->
              </div>
               </div>
-              <div class= "grid grid-cols-12 font-oswald uppercase text-4xl text-yellow-800 px-40 gap-5"><!--create column gap in between both images = 5-->
+              <div class="grid grid-cols-12 font-oswald uppercase text-4xl text-yellow-800 px-40 gap-5"><!--create column gap in between both images = 5-->
                 <div class="col-span-5 bg-cover bg-center bg-[url('/fries-bg-1.jpg')] text-right pl-20 pb-10 pt-10"><!--bg cover represents auto resize background picture into the column given-->
-                  <h4>Get your <br />
+                  <h4>
+                    Get your <br />
                   free
                   </h4>
                   <h4>Cheese Fries</h4>
                   <button class="uppercase bg-red-500 text-white text-lg py-3 px-8 mt-5">Claim now</button>
                 </div>
                 <div class="col-span-7 bg-cover bg-center bg-[url('/burger-bg-1.jpg')] text-right pl-10 pr-10 pt-10">
-                  <h4>Chrispy <br /><!--br= break the line to separate rows-->
+                  <h4>
+                    Chrispy <br /><!--br= break the line to separate rows-->
                     Chicken
                     </h4>
-                  <h4>Burger <br />
+                  <h4>
+                    Burger <br />
                   is back!
                   </h4>
                   <button class="uppercase bg-red-500 text-white text-lg py-3 px-8 mt-5">Claim now</button>
@@ -161,15 +165,15 @@
                   <img src="offer-1.jpg" alt="" /><img src="offer-2.jpg" alt="" /><img src="offer-3.jpg" alt="" />
                 </div>
               </div>
-              <div id='section-4' class="px-20 bg-gray-100 py-20">
-                <div class='grid grid-cols-2'>
+              <div id="section-4" class="px-20 bg-gray-100 py-20">
+                <div class="grid grid-cols-2">
                   <img src="about.png" alt="" class="pl-20" />
                   <h3 class="font-oswald text-5xl uppercase pl-20 pr-4 pt-10 leading-snug">Nothing Brings people Together Like A Good Burger</h3>
                   </div><!--leading-snug : increase paragraph spacing-->
-                <p class='text-lg text-gray-500 mt-10'>That's the philosophy that we always believe in. We're a family-owned and operated business, and we're proud to be a part of the community. We do our best to make sure that everyone's happy and having a good time.</p>
-                <p class='text-lg text-gray-500 mt-10'>Burgers are what brought us together and what keeps us together. It's something that you can't put a price tag on. More importantly, we are interested in people. It's not just about the food.</p>
+                <p class="text-lg text-gray-500 mt-10">That's the philosophy that we always believe in. We're a family-owned and operated business, and we're proud to be a part of the community. We do our best to make sure that everyone's happy and having a good time.</p>
+                <p class="text-lg text-gray-500 mt-10">Burgers are what brought us together and what keeps us together. It's something that you can't put a price tag on. More importantly, we are interested in people. It's not just about the food.</p>
               </div>
-              <div id="section-5" class='grid grid-cols-5 bg-yellow-500 text-amber-900'>
+              <div id="section-5" class="grid grid-cols-5 bg-yellow-500 text-amber-900">
               <div class="col-span-3 pl-20 pt-16 pb-16">
               <h4 class="font-oswald text-5xl uppercase">Download Mobile App</h4>
               <h4 class="font-oswald text-6xl uppercase">Save up to 20%</h4>
@@ -183,8 +187,5 @@
                </div>
                   </div>
                    </div>
-                      </div>
-                        </div>
-                          </div>
-                            </div>
+                     
 </template>
