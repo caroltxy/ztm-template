@@ -22,7 +22,7 @@ const mailer = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user:'apiKey',
+        user:'apikey',
         pass: process.env.sendgridApikey
     }
 });
@@ -36,6 +36,7 @@ try {
     };
 }
 catch (error) {
+    console.log(process.env.sendgridApikey);
     console.log('Error sending email',error);
     }
 };
