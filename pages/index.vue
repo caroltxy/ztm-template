@@ -130,7 +130,7 @@
         </div>
             <div id="right-item-column"><!--right item column is merely the variable name - self creation-->
               <div class="border rounded-md border-gray-200 text-left pb-5 mb-5"><!--rounded md - middle-->
-               <img src="ultimate-bacon.jpg" alt=""/>
+               <img src="/ultimate-bacon.jpg" alt=""/>
                 <h3 class="font-oswald font-medium text-2xl uppercase text-gray-500 mt-5 mb-2 ml-5">Ultimate Bacon</h3>
                 <p class="font-light text-gray-500 mb-5 ml-5">House beef patty, cheddar cheese, smokey bacon, onion, mustard</p>
                 <span class="bg-amber-800 text-yellow-400 font bold text-xl font-oswald ml-5 rounded rounded-lg px-5 py-2">RM14.99<!--xl make the text size slight bigger-->

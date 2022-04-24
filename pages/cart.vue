@@ -60,7 +60,7 @@
               <input id="email" type="email" placeholder="Please email your email" class="w-full border border-gray-300 text-xl mt-5 py-3 px-2" /><!--text xl - enlarge xl size, w-full means to draw an email box in full entire of 3 columns-->
             </td>
             <td colspan="2" class="text-right">
-              <button class="font-oswald uppercase bg-red-500 text-white text-xl py-3 px-2 ml-5 mt-5" @click="submitorder">
+              <button class="font-oswald uppercase bg-red-500 text-white text-xl py-3 px-2 ml-5 mt-5" @click="submitOrder">
                 Confirm My Order
               </button>
             </td>
